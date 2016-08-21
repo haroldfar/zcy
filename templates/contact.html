@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Contact
+            <small>Subheading</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a>
+            </li>
+            <li class="active">Contact</li>
+        </ol>
+    </div>
+
+<div class="container">
+  <h2>Basic Table</h2>
+  <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for username in userdict %}
+    
+      <tr>
+        <td>{{ username }}</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+    {% end %}
+    </tbody>
+  </table>
+</div>
+
+
+    <div class="col-lg-6">
+        <form method = "post" action = "/contact">
+            <div class = "form-group">
+                <label for = "email">Email Address</label>
+                <input type="email" name="email" id="email" class="form-control">
+            </div>
+            <div class = "form-group">
+                <label for = "subject">Subject</label>
+                <input type="text" name="subject" id="subject" class="form-control">
+            </div>
+            <div>
+                <button type = "btn btn-primary" type = "submit" id = "submit-button">Submit the Contact</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+{% end %}
