@@ -44,4 +44,4 @@ def sendEmail(receivers, content = "", subject = ""):
 		print str(e)
 	s.quit()
 
-sendEmail("zhangchiyuan2@gmail.com")
+# sendEmail("zhangchiyuan2@gmail.com")
