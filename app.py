@@ -29,8 +29,9 @@ class ContactHandler(tornado.web.RequestHandler):
 		self.render("contact.html", userdict = u1)
 
 	def post(self):
-		# a = self.get_argument("email")
-		# b = self.get_argument("subject")
+		a = self.get_argument("email")
+		b = self.get_argument("subject")
+		print "received the data" + a + " " + b
 		self.write("thanks for your comment!")
 
 def make_app():

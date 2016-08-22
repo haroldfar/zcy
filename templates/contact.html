@@ -14,7 +14,7 @@
         </ol>
     </div>
 
-<div class="container">
+<!-- <div class="container">
   <h2>Basic Table</h2>
   <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
   <table class="table table-striped">
@@ -36,11 +36,11 @@
     {% end %}
     </tbody>
   </table>
-</div>
+</div> -->
 
-
+    <div class="col-lg-3"></div>
     <div class="col-lg-6">
-        <form method = "post" action = "/contact">
+        <form method="POST" id="form1">
             <div class = "form-group">
                 <label for = "email">Email Address</label>
                 <input type="email" name="email" id="email" class="form-control">
@@ -50,11 +50,22 @@
                 <input type="text" name="subject" id="subject" class="form-control">
             </div>
             <div>
-                <button type = "btn btn-primary" type = "submit" id = "submit-button">Submit the Contact</button>
+                <label for = "content">Content</label>
+                <textarea class="form-control" id="content" rows="5"></textarea>
+            </div>
+            <!-- <div>
+                <button class = "btn btn-primary" id = "submit-button">Submit the Contact</button>
+            </div> -->
+            <br>
+            <div>
+                <input class = "btn btn-primary" type="button" id="bt1" name="click" value="submit"></input>
             </div>
 
         </form>
     </div>
+    <div class="col-lg-3"></div>
+
+    <!-- <button type = "btn btn-primary" id = "submit-button2">Submit the Contact</button> -->
 </div>
 
 

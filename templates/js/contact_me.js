@@ -3,8 +3,27 @@
    example is taken from jqBootstrapValidation docs 
   */
   $(document).ready(function(){
-    $("#submit-button").click(function(){
+    $("#submit-button2").click(function(){
         alert("worked");
+    }); 
+    $("#bt1").click(function(){
+        var email = $("#email").val();
+        var subject = $("#subject").val();
+        // alert(subject);
+        var dict = {"email": email, "subject": subject};
+        $.ajax({
+            type: "POST",
+            url: "/contact",
+            data: dict,
+            cache: false,
+            success: function(data){
+                // alert(data);
+                $("#form1").html("<p>Thanks for your email, we will reply you ASAP</p>");
+            },
+            error:function(){
+                alert("error")
+            },
+        });
     }); 
   });
   // $(document).ready(function(){
