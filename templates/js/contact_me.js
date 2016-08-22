@@ -3,6 +3,8 @@
    example is taken from jqBootstrapValidation docs 
   */
   $(document).ready(function(){
+    $("ul li").removeClass("active");
+    $("#hd-contact").addClass("active");
     $("#submit-button2").click(function(){
         alert("worked");
     }); 
@@ -26,6 +28,8 @@
         });
     }); 
   });
+
+
   // $(document).ready(function(){
   //   alert("it worked");
   // });

@@ -1,0 +1,12 @@
+hi there,
+
+	this is a system generated email. Thanks for your email. Will reply to you very soon.
+
+	Here is the content you provide:
+
+	#subject#
+
+	#content#
+
+Regards
+Chiyuan
