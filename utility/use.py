@@ -40,8 +40,8 @@ def sendEmail(receivers, content = "", subject = ""):
 		s.ehlo()
 		s.login(sender,password)
 		s.sendmail(sender, receivers, msg.as_string())
-	except:
-		print "smtp error"
+	except as e:
+		print str(e)
 	s.quit()
 
 sendEmail("zhangchiyuan2@gmail.com")
