@@ -40,7 +40,7 @@ def sendEmail(receivers, content = "", subject = ""):
 		s.ehlo()
 		s.login(sender,password)
 		s.sendmail(sender, receivers, msg.as_string())
-	except as e:
+	except Exception as e:
 		print str(e)
 	s.quit()
 
