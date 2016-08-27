@@ -3,7 +3,9 @@ from utility import use
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.render("index.html")
+    	re_dict = {}
+    	re_dict["user"] = "Login"
+        self.render("index.html", pass_v = re_dict)
 
 class ReverseHandler(tornado.web.RequestHandler):
     def get(self, input):
