@@ -43,3 +43,7 @@ class AboutHandler(tornado.web.RequestHandler):
 class ServiceHandler(tornado.web.RequestHandler):
 	def get(self):
 		self.render("services.html")
+
+class SignUpHandler(tornado.web.RequestHandler):
+	def get(self):
+		self.render("signuplist.html")
