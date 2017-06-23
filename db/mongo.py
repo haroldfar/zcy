@@ -6,3 +6,6 @@ def get_client():
 		return client
 	else:
 		return MongoClient()
+
+def close_connection():
+	client.close()
